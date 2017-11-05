@@ -36,6 +36,15 @@
         color: white;
       }
 
+      dt {
+        font-weight: bold;
+      }
+
+      dd {
+        font-style: italic;
+        margin-left: 0;
+      }
+
       .header--main,
       .footer--main {
         padding: 15px;
@@ -75,15 +84,7 @@
         position: absolute;
       }
 
-      .company--title {
-        font-weight: bold;
-      }
-
-      .company--name {
-        font-style: italic;
-      }
-
-      .description--text {
+      .description--content {
         border-left: 3px solid #333;
         padding-left: 20px;
       }
@@ -102,8 +103,8 @@
     </header>
 
     <div class="content">
-      <h1>A Suspeita</h1>
-      <p>
+      <h1 id="a-suspeita" class="company--title">A Suspeita</h1>
+      <p class="company--content">
         <figure class="congressperson--figure">
           <img src="http://www.senado.gov.br/senadores/img/fotos-oficiais/senador72.jpg" alt="Foto do senador Roberto Requião" class="congressperson--picture">
           <figcaption class="congressperson--caption"><a href="https://twitter.com/requiaopmdb">Perfil no Twitter</a></figcaption>
@@ -114,18 +115,18 @@
 
       <p>
         <dl>
-          <dt class="company--title">A Empresa</dt>
+          <dt id="a-empresa" class="company--title">A Empresa</dt>
           <dd class="company--name"><a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/cnpjreva_solicitacao2.asp" target="_blank">NB STEAK - CHURRASCARIA DA BRASA LTDA (00.743.990/0001-58)</a></dd>
         </dl>
       </p>
 
-      <h2 class="description--title">A Descrição Apresentada Pelo Parlamentar</h2>
-      <p class="description--text">
+      <h2 id="a-descricao" class="description--title">A Descrição Apresentada Pelo Parlamentar</h2>
+      <p class="description--content">
         REFEIÇÃO E BEBIDA NÃO ALCOÓLICA PARA O SENADOR ROBERTO REQUIÃO, EM ATIVIDADE PARLAMENTAR
       </p>
 
-      <h2 class="description--title">A Regra</h2>
-      <p>
+      <h2 id="a-regra" class="description--title">A Regra</h2>
+      <p class="description--content">
         O <a href="https://www12.senado.leg.br/transparencia/leg/pdf/normas/APS-5-2014-compilado.pdf" target="_blank">Ato do Primeiro-Secretário nº 5 de 2014</a> estabelece algumas regras para alimentação:
         <ul>
           <li>O parlamentar faz o pagamento usando do próprio dinheiro e pede ressarcimento ao Senado Federal. Para comprovação, deve apresentar uma nota fiscal (eletrônica ou não) ou cupom fiscal original, datado, sem rasuras ou informações implícitas.</li>
